@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Main{
 
     public static void main(String[] args){
-        int[] a = {5,6,7,8,1,3};
-        System.out.println(findmax(a));
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите количество элементов в массиве: ");
+        int l = input.nextInt();
+
+        System.out.println("Введите значения элементов массива:");
+
+        int[] a = new int[l];
+        for(int i = 0; i < l; ++i) a[i] = input.nextInt();
+
+        System.out.printf("Наибольший элемент массива: %d\n",findmax(a));
     }
 
     public static int findmax(int[] array){
