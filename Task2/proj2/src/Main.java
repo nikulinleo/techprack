@@ -19,5 +19,6 @@ public class Main {
 		System.out.println(mylist);
 		System.out.println(mylist.avg());
 		System.out.println(mylist.max());
+		System.err.println();
 	}
 }
