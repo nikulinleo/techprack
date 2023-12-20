@@ -12,12 +12,12 @@ public class Main{
         int[] a = new int[l];
         for(int i = 0; i < l; ++i) a[i] = input.nextInt();
 
-        System.out.printf("Наибольший элемент массива: %d\n",findmax(a));
+        System.out.printf("Наименьший элемент массива: %d\n",findmin(a));
     }
 
-    public static int findmax(int[] array){
-        int max=array[0];
-        for(int i = 0; i < array.length; max=(array[i]>max ? array[i] : max), i++);
-        return max;
+    public static int findmin(int[] array){
+        int min=array[0];
+        for(int i = 0; i < array.length; min=(array[i]<min ? array[i] : min), i++);
+        return min;
     }
 }
